@@ -9,25 +9,25 @@ interface Context {
   isLoading: boolean;
 }
 
-const ProductsAPIContext = React.createContext<Context>({
+const BasketProductsAPIContext = React.createContext<Context>({
   Appliances: [],
   isLoading: false
 });
 
-const ProductsAPIContextProvider: React.FC = ({ children }) => {
+const BasketProductsAPIContextProvider: React.FC = ({ children }) => {
   // make api call here
   const { data, loading } = useQuery(Appliances);
 
   return (
-    <ProductsAPIContext.Provider
+    <BasketProductsAPIContext.Provider
       value={{
         Appliances: data,
         isLoading: loading
       }}
     >
       {children}
-    </ProductsAPIContext.Provider>
+    </BasketProductsAPIContext.Provider>
   );
 };
 
-export { ProductsAPIContextProvider, ProductsAPIContext };
+export { BasketProductsAPIContextProvider, BasketProductsAPIContext };

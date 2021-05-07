@@ -15,7 +15,7 @@ import {
   Wrapper,
   ViewButton
 } from './views';
-import { BasketContext } from '@md-modules/appliances/basket/basketProvider';
+import { BasketContext } from '@md-modules/appliances/basket-provider';
 
 const PersonPresentation = () => {
   const { isLoading } = React.useContext(PersonAPIContext);
@@ -32,8 +32,8 @@ const PersonPresentation = () => {
           <PersonDetailsContainer>
             <PersonName>{personInfo?.name}</PersonName>
             <PersonInfoContainer>
-              {personInfoOdj.map((i) => (
-                <PersonInfo key={personInfo?.id} {...i} />
+              {personInfoOdj.map((i, idI) => (
+                <PersonInfo key={idI} {...i} />
               ))}
             </PersonInfoContainer>
             <ViewButton name = {personInfo?.id} onClick={ handleClickBasket }>

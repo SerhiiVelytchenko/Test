@@ -9,8 +9,8 @@ height: 30px;
 
 
 export const ViewButton = styled.button`
-  margin: 0;
-  padding: 0px; 
+  margin: 0px;
+  padding: 0px;
   background-color: transparent;
   border-radius: 3px;
   border: 1px solid transparent;
@@ -24,7 +24,16 @@ export const ViewButton = styled.button`
   }
 `;
 
+export const ProductBasket = styled.div<{ item?: string }>`
+font-weight: bold;
+line-height: 1.28;
+font-size: 15px;
+color: black;
+  /* color: ${({ theme }) => theme.colors.white}; */
+border-radius: 10px;
+margin: -20px 0px 0px 40px;
+width: 20px;
+height: 20px;
+background-color: ${props => props.item ?? 0};
 
-
-
-
+`;

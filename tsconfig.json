@@ -20,6 +20,9 @@
       "@md-star-wars/*": ["./modules/star-wars/*"],
       "@md-sw-people/*": ["./modules/star-wars/people/*"],
       "@md-sw-person/*": ["./modules/star-wars/person/*"],
+      "@md-appliances/*": ["./modules/appliances/*"],
+      "@md-technics-appliances/*": ["./modules/appliances/products/*"],
+      "@md-technics-person/*": ["./modules/appliances/person/*"],
       "@md-ui/*": ["./modules/shared/components/ui/*"],
       "@md-utils/*": ["./modules/shared/utils/*"]
     }

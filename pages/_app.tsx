@@ -7,7 +7,7 @@ import { theme } from '@md-styles/styled/theme';
 import { GlobalStyles } from '@md-styles/styled/global';
 // global css
 import 'normalize.css/normalize.css';
-import { BasketContextProvider } from '@md-modules/appliances/basket/basketProvider';
+import { BasketModalContextProvider } from '@md-modules/appliances/basket/basket-modal-context';
 
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <>
@@ -17,11 +17,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
       <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
       <meta charSet='utf-8' />
     </Head>
-    <BasketContextProvider>
+    <BasketModalContextProvider>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
-    </BasketContextProvider>
+    </BasketModalContextProvider>
     <GlobalStyles />
   </>
 );

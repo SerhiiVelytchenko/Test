@@ -6,7 +6,6 @@ const Home = () => {
   // env example
   // console.log(process.env.ANALYTICS_ID) for server side
   // console.log(process.env.NEXT_PUBLIC_ANALYTICS_ID) for client side
-  const [active, setActive] = React.useState(true)
   return (
     <MainLayout>
       <div className={styles.container}>

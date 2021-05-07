@@ -3,20 +3,36 @@ import styled from 'styled-components';
 export const CardWrapper = styled.div`
   display:flex;
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
   border: 2px solid #C5D0E6;
   margin: 0px 0px 5px 0px;
 `;
 
+export const Wrapper = styled.div`
+display:flex;
+/* flex-direction: column; */
+
+`;
+
 export const CardImgWrapper = styled.div`
 height:100px;
-width: 20.3vw;
+width: 80px;
 `;
 
 export const CardImg = styled.img`
 padding: 5px 5px 5px 10px;
 height:100px;
 `;
+
+export const CardName = styled.div`
+`;
+
+export const CardCounter = styled.div`
+`;
+
+
+
+
 
 export const CardFooter = styled.div`
 display:flex;
@@ -31,7 +47,7 @@ justify-content: space-around;
 width: 350px;
 `;
 
-export const CardFooterTitle = styled.div`
+export const CardPrice = styled.div`
   line-height: 1.28;
   font-size: 20px;
   color: black;
@@ -54,4 +70,13 @@ export const ViewButton = styled.button`
     color:#B03F35;
     border: 1px solid #AB274F;
   }
-`
+`;
+
+export const CardItem = styled.div`
+  line-height: 1.28;
+  font-size: 20px;
+  color: black;
+  margin: 0;
+  text-align: center;
+`;
+

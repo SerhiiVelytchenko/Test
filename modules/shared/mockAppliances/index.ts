@@ -57,7 +57,7 @@ export const Appliances: Technics[] = [
     }
   },
   {
-    name: 'Кухонная плита Kaiser',
+    name: '-',
     id: '4',
     url: 'https://content1.rozetka.com.ua/goods/images/big/160975058.png',
     price: 14300,
